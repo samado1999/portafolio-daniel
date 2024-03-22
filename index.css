@@ -1,0 +1,85 @@
+.navigation-links-nav {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.navigation-links-text {
+    color: var(--dl-color-gray-white);
+    margin: 0px 100px;
+    transition: all 0.3s ease-in-out;
+}
+.navigation-links-text:hover {
+    transform: scale(1.2);
+}
+.home-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: var(--dl-space-space-twounits) var(--dl-space-space-threeunits) var(--dl-space-space-twounits) var(--dl-space-space-threeunits);
+    justify-content: center;
+}
+.home-nav {
+    display: flex;
+    flex-direction: row;
+}
+.home-responsive {
+    margin: 10px 15px 10px 15px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    padding: var(--dl-space-space-twounits) var(--dl-space-space-threeunits) var(--dl-space-space-twounits) var(--dl-space-space-threeunits);
+}
+.home-responsive-container {
+    margin: 10px 15px 10px 15px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+.home-responsive-group {
+    display: flex;
+    justify-content: center;
+}
+.home-responsive-center-single {
+    margin: 10px 15px 10px 15px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+.home-text {
+    color: var(--dl-color-gray-white);
+    margin-bottom: var(--dl-space-space-twounits);
+}
+@media (max-width: 767px) {
+    .navigation-links-nav {
+        flex-direction: column;
+    }
+    .home-responsive-group {
+        flex-direction: column;
+    }
+    .home-responsive-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-responsive-container,
+    .home-responsive-center-single {
+        width: 400px;
+        height: 300px;
+    }
+    .navigation-links-text {
+        margin-bottom: 10px;
+    }
+}

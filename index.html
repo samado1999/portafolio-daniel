@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portafolio</title>
+        <meta property="og:title" content="Portafolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <link href="./index.css" rel="stylesheet" />
+        <div class="Heading">
+            <header data-role="Header" class="home-header">
+                <nav class="navigation-links-nav">
+                    <span onclick="scrollToSection('inicio')" class="navigation-links-text">INICIO</span>
+                    <span onclick="scrollToSection('trabajo')" class="navigation-links-text">TRABAJO</span>
+                    <span onclick="scrollToSection('sobre-mi')" class="navigation-links-text">SOBRE MI</span>
+                </nav>
+            </header>
+            <div id="inicio" style="background-image: url('public/assets/Cocina.png')" class="home-responsive">
+                <h1 class="home-text">HOLA</h1>
+                <span class="home-text"> Me llamo Daniel Santofimio, soy diseñador y artista </span>
+            </div>
+            <div id="trabajo" class="home-responsive-group">
+                <div class="home-responsive-center">
+                    <div style="background-image: url('public/assets/asdqwe342fd.png')" class="home-responsive-container"></div>
+                    <div style="background-image: url('public/assets/ererewwqqweqwe.png')" class="home-responsive-container"></div>
+                </div>
+                <div class="home-responsive-center">
+                    <div style="background-image: url('public/assets/Modelia1.png')" class="home-responsive-center-single"></div>
+                </div>
+                <div class="home-responsive-center">
+                    <div style="background-image: url('public/assets/ertrysdfsdffhbnvcb.png')" class="home-responsive-container"></div>
+                    <div style="background-image: url('public/assets/ggggfftretert.png')" class="home-responsive-container"></div>
+                </div>
+            </div>
+        </div>
+        <footer id="sobre-mi" style="background-image: url('public/assets/ertertweqwe543.png')" class="home-responsive">
+            <h1 class="home-text">SOBRE MI</h1>
+            <span class="home-text"
+                >¡Hola! Soy Daniel Santofimio, un apasionado diseñador de interiores con una trayectoria de 2 años en el campo. Mi enfoque principal
+                se centra en el diseño de apartamentos, restaurantes y bares, con un enfoqué destacado en el sector comercial. He tenido el privilegio
+                de trabajar en la creación de ambientes únicos que reflejan la identidad y visión de mis clientes. Además, he colaborado en el
+                desarrollo de la imagen de marca de varias empresas. Mi pasión por el diseño de interiores se refleja en cada proyecto que emprendo,
+                buscando siempre superar las expectativas y crear espacios que inspiren y cautiven a quienes los experimentan.</span
+            >
+        </footer>
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        </script>
+    </body>
+</html>
