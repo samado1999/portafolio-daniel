@@ -65,6 +65,7 @@ html {
     line-height: 1.15;
     font-family: 'Aileron-Light';
     font-size: 16px;
+    min-width: 60vh;
 }
 * {
     box-sizing: border-box;
